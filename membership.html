@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="DoBu Martial Arts membership options and enquiry form.">
+    <title>DoBu Martial Arts | Membership</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="site-shell">
+
+        <div data-site-header></div>
+
+        <main>
+
+            <section class="page-intro">
+
+                <div class="page-number">03</div>
+
+                <div>
+                    <p class="eyebrow">Membership options</p>
+
+                    <h1>
+                        A clear plan for the way you want to train.
+                    </h1>
+
+                    <div class="intro-copy">
+                        <p>
+                            Start with the sessions you can realistically attend,
+                            then increase your training as your confidence and goals
+                            grow. There are no hidden joining fees in the published
+                            monthly plans.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section
+                class="membership-ledger"
+                aria-label="Membership plans"
+            >
+
+                <article class="membership-plan">
+                    <p class="plan-index">01</p>
+
+                    <h2>Basic</h2>
+
+                    <p class="plan-price">
+                        <strong>£25</strong> per month
+                    </p>
+
+                    <p>
+                        One martial art, up to two sessions each week.
+                    </p>
+
+                    #membership-form
+                        Ask about this plan
+                    </a>
+                </article>
+
+                <article class="membership-plan">
+                    <p class="plan-index">02</p>
+
+                    <h2>Intermediate</h2>
+
+                    <p class="plan-price">
+                        <strong>£35</strong> per month
+                    </p>
+
+                    <p>
+                        One martial art, up to three sessions each week.
+                    </p>
+
+                    #membership-form
+                        Ask about this plan
+                    </a>
+                </article>
+
+                <article class="membership-plan featured-plan">
+
+                    <span class="plan-marker">
+                        A flexible progression plan
+                    </span>
+
+                    <p class="plan-index">03</p>
+
+                    <h2>Advanced</h2>
+
+                    <p class="plan-price">
+                        <strong>£45</strong> per month
+                    </p>
+
+                    <p>
+                        Any two martial arts, up to five sessions each week.
+                    </p>
+
+                    #membership-form
+                        Ask about this plan
+                    </a>
+
+                </article>
+
+                <article class="membership-plan">
+                    <p class="plan-index">04</p>
+
+                    <h2>Elite</h2>
+
+                    <p class="plan-price">
+                        <strong>£60</strong> per month
+                    </p>
+
+                    <p>
+                        Unlimited group classes across the full programme.
+                    </p>
+
+                    #membership-form
+                        Ask about this plan
+                    </a>
+                </article>
+
+            </section>
+
+            <section class="services-section">
+
+                <div>
+                    <p class="eyebrow">Additional training</p>
+
+                    <h2>
+                        Build a programme around your own goals.
+                    </h2>
+                </div>
+
+                <ul class="service-list">
+                    <li>✓ Private martial arts tuition — £15 per hour</li>
+                    <li>✓ Junior membership — £25 per month</li>
+                    <li>✓ Six-week beginners’ self-defence course — £180</li>
+                    <li>✓ Fitness room access — £6 per visit</li>
+                    <li>✓ Personal fitness training — £35 per hour</li>
+                </ul>
+
+            </section>
+
+            <section
+                class="membership-form-section"
+                id="membership-form"
+            >
+
+                <div class="form-copy">
+
+                    <p class="eyebrow">
+                        First visit enquiry
+                    </p>
+
+                    <h2>
+                        Start a conversation with the coaching team.
+                    </h2>
+
+                    <p>
+                        Tell us what you would like to train and the days that
+                        usually work for you. A coach can recommend an appropriate
+                        first session.
+                    </p>
+
+                    <p class="privacy-note">
+                        ✓ This demonstration form validates input in the browser.
+                        A live site would send data only over HTTPS to a secured
+                        server-side account service.
+                    </p>
+
+                </div>
+
+                <form
+                    class="membership-form"
+                    id="membership-form-handler"
+                >
+
+                    <label for="name">
+                        Your name
+                    </label>
+
+                    <input
+                        id="name"
+                        name="name"
+                        required
+                        autocomplete="name"
+                        placeholder="e.g. Alex Morgan"
+                    >
+
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <input
+                        id="email"
+                        name="email"
+                        required
+                        type="email"
+                        autocomplete="email"
+                        placeholder="alex@example.com"
+                    >
+
+                    <label for="interest">
+                        I am interested in
+                    </label>
+
+                    <select
+                        id="interest"
+                        name="interest"
+                        required
+                    >
+                        <option value="" selected disabled>
+                            Select a discipline or membership
+                        </option>
+                        <option>Jiu-jitsu</option>
+                        <option>Karate</option>
+                        <option>Judo</option>
+                        <option>Muay Thai</option>
+                        <option>Junior membership</option>
+                        <option>Fitness training</option>
+                    </select>
+
+                    <label for="message">
+                        Anything we should know?
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="For example: I am completely new to martial arts and can usually train after work."
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        class="form-submit"
+                    >
+                        Send enquiry
+                    </button>
+
+                    <p
+                        class="success-message"
+                        id="membership-success"
+                        role="status"
+                        hidden
+                    >
+                        Thank you. Your enquiry has been prepared for the DoBu team.
+                        In the live version, this would be securely delivered to the
+                        membership inbox.
+                    </p>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <div data-site-footer></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

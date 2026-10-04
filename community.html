@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="DoBu Martial Arts community forum and social integration prototype.">
+    <title>DoBu Martial Arts | Community</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="site-shell">
+
+        <div data-site-header></div>
+
+        <main>
+
+            <section class="page-intro">
+
+                <div class="page-number">06</div>
+
+                <div>
+                    <p class="eyebrow">Community features</p>
+
+                    <h1>
+                        Train together. Share progress.
+                    </h1>
+
+                    <div class="intro-copy">
+                        <p>
+                            This front-end community prototype demonstrates
+                            a simple discussion area and social-media
+                            integration points. Posts are stored only in this
+                            browser for demonstration.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="community-section">
+
+                <div class="community-intro">
+
+                    <p class="eyebrow">
+                        Discussion board prototype
+                    </p>
+
+                    <h2>
+                        Ask, share and encourage.
+                    </h2>
+
+                    <p>
+                        Members could use a production forum to ask training
+                        questions, share progress and discuss classes. A live
+                        implementation would add authenticated accounts,
+                        server-side validation, moderation and a database.
+                    </p>
+
+                    <div class="social-cards">
+
+                        <a
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="noopener"
+                            class="social-card"
+                        >
+                            <strong>Instagram</strong>
+                            <span>@dobumartialarts</span>
+                        </a>
+
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener"
+                            class="social-card"
+                        >
+                            <strong>Facebook</strong>
+                            <span>DoBu Martial Arts</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <form
+                    class="membership-form community-form"
+                    id="community-form"
+                >
+
+                    <p class="eyebrow light">
+                        Add a local demo post
+                    </p>
+
+                    <label for="communityName">
+                        Your name
+                    </label>
+
+                    <input
+                        id="communityName"
+                        name="communityName"
+                        required
+                        placeholder="e.g. Alex Morgan"
+                    >
+
+                    <label for="communityTopic">
+                        Topic
+                    </label>
+
+                    <select
+                        id="communityTopic"
+                        name="communityTopic"
+                    >
+                        <option>Training question</option>
+                        <option>Class recommendation</option>
+                        <option>Member progress</option>
+                        <option>Community event</option>
+                    </select>
+
+                    <label for="communityMessage">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="communityMessage"
+                        name="communityMessage"
+                        rows="5"
+                        required
+                        placeholder="Share a training question or encouragement."
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        class="form-submit"
+                    >
+                        Post to demo board
+                    </button>
+
+                </form>
+
+            </section>
+
+            <section class="community-posts-section">
+
+                <div class="section-heading-row">
+
+                    <div>
+                        <p class="eyebrow">
+                            Latest demo posts
+                        </p>
+
+                        <h2>
+                            Member conversation.
+                        </h2>
+                    </div>
+
+                    <p>
+                        Prototype content is intentionally local to the browser;
+                        no real account or public forum service is connected.
+                    </p>
+
+                </div>
+
+                <div
+                    id="community-posts"
+                    class="community-post-list"
+                    aria-live="polite"
+                ></div>
+
+            </section>
+
+        </main>
+
+        <div data-site-footer></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
